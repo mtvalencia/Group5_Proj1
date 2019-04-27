@@ -1,0 +1,51 @@
+body {
+    /* Typography */
+    font-size: 18px;
+    line-height: 27px;
+  
+    /* Visual */
+    background-color: whitesmoke;
+  }
+  .jumbotron {
+      background-color:rgb(128, 228, 203);
+  }
+  h1{
+      position: relative;
+      text-align: center;
+      color: darkblue;
+      lighting-color: aqua;
+  }
+  nav {
+      margin: 20px;
+      margin-bottom: 10px;
+      background-color: rgb(64, 6, 112);
+  }
+  .container {
+      margin: 3px, 3px, 3px, 3px;
+      background-color: blanchedalmond;
+
+  }
+  #form {
+      margin-right: 5px;
+  }
+  .row {
+      border: 10px; background-color: blanchedalmond;
+  }
+ .highlightFrame {
+      border-color: black;
+  }
+  p {
+      color: whitesmoke;
+  }
+  .form {
+      margin: 3px;
+
+  }
+  .button {
+      border-bottom-color: darkblue;
+      flex: whitesmoke;
+  }
+  .d-block {
+      border-block-end-width: 4px;
+      border-block-end-color: rgb(182, 182, 164);
+  }

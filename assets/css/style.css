@@ -7,18 +7,23 @@ body {
     background-color: whitesmoke;
   }
   .jumbotron {
-      background-color:rgb(128, 228, 203);
+      background-size: 100%;
+      fill-opacity: inherit;
+      align-items: center;
   }
   h1{
-      position: relative;
+      z-index: 0;
       text-align: center;
       color: darkblue;
-      lighting-color: aqua;
+      fill: lightslategray;
+      border-block-end-width: 5px;
+    
   }
   nav {
       margin: 20px;
+      margin-right: 40px;
       margin-bottom: 10px;
-      background-color: rgb(64, 6, 112);
+      background-color: lightgrey;
   }
   .container {
       margin: 3px, 3px, 3px, 3px;
@@ -35,14 +40,15 @@ body {
       border-color: black;
   }
   p {
-      color: whitesmoke;
+      color: darkblue;
   }
   .form {
       margin: 3px;
 
   }
   .button {
-      border-bottom-color: darkblue;
+      border-color: darkblue;
+      fill: lightblue;
       flex: whitesmoke;
   }
   .d-block {

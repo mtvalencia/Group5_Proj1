@@ -1,61 +1,58 @@
 body {
     /* Typography */
-    font-size: 18px;
+    font-size: 20px;
+    color: darkblue;
     line-height: 27px;
   
     /* Visual */
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.719);
   }
-  .jumbotron {
+#jumbotron {
       background-size: 100%;
-      fill-opacity: inherit;
-      align-items: center;
-  }
-  h1{
+ }
+h1{
       z-index: 0;
+      text-decoration-color: darkblue;
       text-align: center;
-      color: darkblue;
-      fill: lightslategray;
-      border-block-end-width: 5px;
-    
-  }
-  nav {
-      margin: 20px;
-      margin-right: 40px;
-      margin-bottom: 10px;
-      background-color: lightgrey;
+      text-decoration-line: underline;
   }
   .container {
       margin: 3px, 3px, 3px, 3px;
-      background-color: blanchedalmond;
-
+      text-align: left;
+  }
+  .form-control {
+    display: inline-block;
+    width: 45%;
+    border: 2px solid lightsteelblue;
   }
   #form {
-      margin-right: 5px;
+      margin-right: 50px;
+      margin-left: 30px;
+      align-content: left;
+      border-bottom: 3px;
   }
-  .row {
-      border: 10px; background-color: blanchedalmond;
+ 
+ .row {
+      border: 10px; background-color: lightgray;
   }
- .highlightFrame {
+ /* .highlightFrame {
       border-color: black;
-  }
-  p {
+  } */
+  h5 {
       color: darkblue;
+      font-size: 22px;
   }
-  .form {
-      margin: 3px;
-
-  }
-  .button {
+ 
+  .btn {
+      border-block-start-width: 4px;
       border-color: darkblue;
       fill: lightblue;
       flex: whitesmoke;
   }
-  .d-block {
-      border-block-end-width: 4px;
-      border-block-end-color: rgb(182, 182, 164);
-}
+
 #map { 
-    height: 600px;
+    height: 400px;
+    width: 1080px;
     border: 3px solid black;
+    align-content: center;
 }

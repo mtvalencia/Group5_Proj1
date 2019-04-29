@@ -7,7 +7,7 @@ var streets = L.tileLayer.Unwired({key: key, scheme: "streets"});
 // Initialize the map
 var map = L.map('map', {
         center: [39.676681, -104.961936], //map loads with this location as center
-        zoom: 16,
+        zoom: 11,
         layers: [streets] // Show 'streets' by default
 });
 
@@ -19,8 +19,12 @@ L.control.layers({
     "Streets": streets
 }).addTo(map);
 
-function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
+var popup = L.popup();
+
+    function onMapClick(e) {
+        popup.setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(map);
     }
 
 map.on('click', onMapClick);

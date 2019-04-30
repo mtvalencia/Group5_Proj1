@@ -1,37 +1,34 @@
 //News API query
 
-// var location = 
-
-
-
-// .then(function(response) {
-//   var results = response.data;
-
-//   for (var i = 0; i < results.length; i++) {
-
-
-
-function queryNews(location) {
-  let queryURL = "https://newsapi.org/v2/everything?q=" + location + "&apiKey=ae1ba1afbec248f99dc29c98209f1741"
-
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response);
-  });
-
-  let htmlRequest = new XMLHttpRequest();
-  htmlRequest.onload = function () {
-    if (htmlRequest.response) {
-      let object = JSON.parse(htmlRequest.response);
-    } else {
-      console.log("error");
-    }
-  };
-  htmlRequest.open("GET", queryURL, true);
-  htmlRequest.send();
-}
-queryNews("denver", function (results) {
-  console.log(results);
-});
+$("#news-button").on('click',function(){
+  searchNews("denver")
+  })
+  
+    var searchNews = function(location) {
+      var queryURL = "https://newsapi.org/v2/everything?q=" + location + "&apiKey=ae1ba1afbec248f99dc29c98209f1741"
+  
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function (response) {
+        document.querySelector("#newsArticle").innerHTML = ""
+        for (var i = 0; i < 3; ++i){
+          var newsHTML = buildHTMLrow(response.articles[i])
+          document.querySelector("#newsArticle").appendChild(newsHTML)
+        }
+      })};
+  
+      function buildHTMLrow(article) {
+  
+        var divElement = document.createElement("div")
+      
+        var rowHTML = `
+          <div>${article.source.name}</div>
+          <div>${article.title}</div>
+          <div>${article.author}</div>
+          <div>${article.description}</div>
+          <div>${article.url}</div>
+        `
+        divElement.innerHTML = rowHTML
+        return divElement
+      }

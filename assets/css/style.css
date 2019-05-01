@@ -1,7 +1,7 @@
 body {
     /* Typography */
     font-size: 20px;
-    color: darkblue;
+    color: #3e4444;
     line-height: 27px;
   
     /* Visual */
@@ -9,12 +9,18 @@ body {
   }
 #jumbotron {
       background-size: 100%;
+      color: #b2ad7f
+      
+      
+      
  }
 h1{
       z-index: 0;
-      text-decoration-color: darkblue;
+      text-decoration-color: #b2ad7f;
       text-align: center;
       text-decoration-line: underline;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
   }
   .container {
       margin: 3px, 3px, 3px, 3px;
@@ -60,13 +66,13 @@ h1{
       border-color: black;
   } */
   h5 {
-      color: darkblue;
+      color #b2ad7f;
       font-size: 22px;
   }
  
   .btn {
       border-block-start-width: 4px;
-      border-color: darkblue;
+      border-color: #878f99;
       fill: lightblue;
       flex: whitesmoke;
   }
@@ -75,6 +81,10 @@ h1{
     height: 400px;
     border: 3px black;
     align-content: center;
+
+    box-shadow: 12px 12px 29px #555;
+}
+
 }
 @media only screen and (max-width: 600px) {
   #map {

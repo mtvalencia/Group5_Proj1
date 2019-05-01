@@ -74,7 +74,7 @@ var settings = {
         var divElement = document.createElement("tr")
       
         var rowHTML = `
-          <td>${article.source.name}</td>
+          <td id="sourceColumn">${article.source.name}</td>
           <td>${article.title}</td>
           <td>${article.description}</td>
           <td><a href="${article.url}">Link</a></td>

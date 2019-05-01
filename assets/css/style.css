@@ -43,10 +43,22 @@ h1{
   td{
     padding: 8px;
     vertical-align: middle;
-    border-bottom: solid 1px #dddddd;
+    border-bottom: solid 5px #dddddd;
+    font-size: 15px;
+    
+  }
+#sourceColumn{
+    font-size: 16px;
+  
+    min-width: 150px;
   }
 
-
+  #news-button {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+  }  
  .row {
       border: 10px; background-color: lightgray;
   }
@@ -67,8 +79,16 @@ h1{
 
 #map { 
     height: 400px;
-    width: 1080px;
-    border: 3px solid black;
+    border: 3px black;
     align-content: center;
+
     box-shadow: 12px 12px 29px #555;
+}
+
+}
+@media only screen and (max-width: 600px) {
+  #map {
+    width: 850px;
+    height: 350px;
+  }
 }

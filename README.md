@@ -1,5 +1,8 @@
 # Group5_Proj1
 
-This is a test commit.
+## GEO News
 
-This is another test commit.
+Click on the map to see news articles about that location, or search by city name in the search bar. If news articles aren't showing, try clicking near more populated areas (i.e. major cities)
+
+Built with
+

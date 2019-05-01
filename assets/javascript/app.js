@@ -1,3 +1,4 @@
+//News API query
 // API token goes here
 var key = '9d56d95891b46e';
 
@@ -47,53 +48,41 @@ var settings = {
     "method": "GET"
   }
   
-
   $.ajax(settings).done(function (response) {
     var cityState = "%22" + response.address.city + "%22%2C%20" + response.address.state;
     console.log(cityState);
-
-    $("#news-button").on('click',function(){
-      searchNews(cityState)
-      })
-  
-      var searchNews = function(location) {
-        var queryURL = "https://newsapi.org/v2/everything?q=" + location + "&apiKey=ae1ba1afbec248f99dc29c98209f1741"
-    
-    
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        }).then(function (response) {
-          document.querySelector("#newsArticle").innerHTML = ""
-          for (var i = 0; i < 3; ++i){
-            var newsHTML = buildHTMLrow(response.articles[i])
-            document.querySelector("#newsArticle").appendChild(newsHTML)
-          }
-      
-          
-        })};
-    
-        function buildHTMLrow(article) {
-    
-          var divElement = document.createElement("div")
-        
-          var rowHTML = `
-            <div>${article.source.name}</div>
-            <div>${article.title}</div>
-            <div>${article.author}</div>
-            <div>${article.description}</div>
-            <div>${article.url}</div>
-          `
-          divElement.innerHTML = rowHTML
-          return divElement
-        }
+    searchNews(cityState)
   });
-
-  
 });
-
-
-//News API query
-
   
+    var searchNews = function(location) {
+      var queryURL = "https://newsapi.org/v2/everything?q=" + location + "&apiKey=ae1ba1afbec248f99dc29c98209f1741"
+  
+  
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function (response) {
+        document.querySelector("#newsArticle").innerHTML = ""
+        for (var i = 0; i < 3; ++i){
+          var newsHTML = buildHTMLrow(response.articles[i])
+          document.querySelector("#newsArticle").appendChild(newsHTML)
+        }
     
+        
+      })};
+  
+      function buildHTMLrow(article) {
+  
+        var divElement = document.createElement("div")
+      
+        var rowHTML = `
+          <div>${article.source.name}</div>
+          <div>${article.title}</div>
+          <div>${article.author}</div>
+          <div>${article.description}</div>
+          <div>${article.url}</div>
+        `
+        divElement.innerHTML = rowHTML
+        return divElement
+      }

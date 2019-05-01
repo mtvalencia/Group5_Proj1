@@ -58,6 +58,7 @@ var settings = {
       var queryURL = "https://newsapi.org/v2/everything?q=" + location + "&apiKey=ae1ba1afbec248f99dc29c98209f1741"
   
   
+
       $.ajax({
         url: queryURL,
         method: "GET"
@@ -68,8 +69,8 @@ var settings = {
           document.querySelector("#newsArticle").appendChild(newsHTML)
         }
     
-        
       })};
+  //Append API query response into newsArticle table
   
       function buildHTMLrow(article) {
   
@@ -78,9 +79,8 @@ var settings = {
         var rowHTML = `
           <td>${article.source.name}</td>
           <td>${article.title}</td>
-          <td>${article.author}</td>
           <td>${article.description}</td>
-          <td>${article.url}</td>
+          <td><a href="${article.url}">Link</a></td>
         `
         divElement.innerHTML = rowHTML
         return divElement

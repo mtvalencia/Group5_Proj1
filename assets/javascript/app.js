@@ -70,6 +70,7 @@ var settings = {
     
         
       })};
+  //Append API query response into newsArticle table
   
       function buildHTMLrow(article) {
   
@@ -80,8 +81,11 @@ var settings = {
           <td>${article.title}</td>
           <td>${article.author}</td>
           <td>${article.description}</td>
-          <td>${article.url}</td>
+          <td><a href="${article.url}">Link</a></td>
         `
+
+
+
         divElement.innerHTML = rowHTML
         return divElement
       }

@@ -32,6 +32,15 @@ h1{
       border-bottom: 3px;
   }
  
+  /* TABLE */
+
+  td{
+    padding: 8px;
+    vertical-align: middle;
+    border-bottom: solid 1px #dddddd;
+  }
+
+
  .row {
       border: 10px; background-color: lightgray;
   }

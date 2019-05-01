@@ -9,6 +9,7 @@ body {
   }
 #jumbotron {
       background-size: 100%;
+      color: b2ad7f; 
  }
 h1{
       z-index: 0;
@@ -64,4 +65,5 @@ h1{
     width: 1080px;
     border: 3px solid black;
     align-content: center;
+    12px 12px 29px #555;
 }

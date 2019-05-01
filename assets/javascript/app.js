@@ -83,9 +83,7 @@ var settings = {
           <td>${article.description}</td>
           <td><a href="${article.url}">Link</a></td>
         `
-
-
-
+        
         divElement.innerHTML = rowHTML
         return divElement
       }

@@ -1,4 +1,3 @@
-//News API query
 // API token goes here
 var key = '9d56d95891b46e';
 
@@ -47,14 +46,14 @@ var settings = {
     "url": "https://us1.locationiq.com/v1/reverse.php?key=" + key + "&lat=" + lat + "&lon=" + long + "&format=json",
     "method": "GET"
   }
-  
+  //searchNews with  locationIQ API response
   $.ajax(settings).done(function (response) {
     var cityState = "%22" + response.address.city + "%22%2C%20" + response.address.state;
     console.log(cityState);
     searchNews(cityState)
   });
 });
-  
+  //News API query
     var searchNews = function(location) {
       var queryURL = "https://newsapi.org/v2/everything?q=" + location + "&apiKey=ae1ba1afbec248f99dc29c98209f1741"
   
@@ -74,14 +73,14 @@ var settings = {
   
       function buildHTMLrow(article) {
   
-        var divElement = document.createElement("div")
+        var divElement = document.createElement("tr")
       
         var rowHTML = `
-          <div>${article.source.name}</div>
-          <div>${article.title}</div>
-          <div>${article.author}</div>
-          <div>${article.description}</div>
-          <div>${article.url}</div>
+          <td>${article.source.name}</td>
+          <td>${article.title}</td>
+          <td>${article.author}</td>
+          <td>${article.description}</td>
+          <td>${article.url}</td>
         `
         divElement.innerHTML = rowHTML
         return divElement

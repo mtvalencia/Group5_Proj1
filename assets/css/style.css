@@ -39,15 +39,12 @@ h1{
     vertical-align: middle;
     border-bottom: solid 1px #dddddd;
   }
- button{
-    width: 100%;
+  #news-button {
     padding: 10px 20px;
     text-align: center;
-    background: white;
-    border: solid 1px #dddddd;
-    font-size: 26px;
- }
-
+    font-size: 22px;
+    width: 100%;
+  }  
  .row {
       border: 10px; background-color: lightgray;
   }

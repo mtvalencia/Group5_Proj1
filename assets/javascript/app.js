@@ -50,7 +50,7 @@ var settings = {
   $.ajax(settings).done(function (response) {
     var cityState = "%22" + response.address.city + "%22%2C%20" + response.address.state;
     console.log(cityState);
-    searchNews(cityState)
+    searchNews(cityState);
   });
 });
   //News API query

@@ -65,6 +65,7 @@ $("form.form").submit(function(e){
   searchNews(citySearch)
 });
 
+
 //News API query
 
 var searchNews = function (location) {
@@ -78,7 +79,6 @@ var searchNews = function (location) {
     for (var i = 0; i < 3; ++i) {
       var newsHTML = buildHTMLrow(response.articles[i])
       document.querySelector("#newsArticle").appendChild(newsHTML)
-      // if (response.articles.source.id)= ""
     }
   })
 };
@@ -90,14 +90,9 @@ function buildHTMLrow(article) {
 
   var rowHTML = `
           <td id="sourceColumn">${article.source.name}</td>
-          <td id="articletitle">${article.title}</td>
-          <td id="description">${article.description}</td>
-          <td id ="readmore"><a href="${article.url}">Read more</a></td>
-
           <td>${article.title}</td>
           <td>${article.description}</td>
           <td><a href="${article.url}">Read more..</a></td>
-
         `
   divElement.innerHTML = rowHTML
   return divElement

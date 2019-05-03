@@ -85,7 +85,7 @@ h1{
     box-shadow: 12px 12px 29px #555;
 }
 
-}
+
 @media only screen and (max-width: 600px) {
   #map {
     width: 850px;

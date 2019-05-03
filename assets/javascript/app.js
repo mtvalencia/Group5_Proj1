@@ -78,7 +78,7 @@ var searchNews = function (location) {
     for (var i = 0; i < 3; ++i) {
       var newsHTML = buildHTMLrow(response.articles[i])
       document.querySelector("#newsArticle").appendChild(newsHTML)
-      
+      // if (response.articles.source.id)= ""
     }
   })
 };

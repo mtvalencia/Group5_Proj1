@@ -5,7 +5,7 @@
 <head>
       <meta charset="UTF-8">
       <title>GEO NEWS</title>
-      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -25,7 +25,7 @@
 
     <form class="form">
         <label for ="city-input">Search News Article by City</label> <br>
-        <input class="form-control" id="city-input" type="text" col = "md-3" aria-modal="true" name="city-input" required>
+        <input class="form-control" id="city-input" type="text" col = "md-3" aria-modal="true">
         <button class="btn btn-default" type="search"><i class="fa fa-search-plus"><strong>Search</i></strong></button><br>
     </form>
     <br>
@@ -39,9 +39,11 @@
           </div>
         </div>
      
+
+
         <div class = "row" id = "newsArticle">
 
-           <button id="news-button">GET NEWS</button>
+        
            
 
             <span class="d-block p-2 bg-dark text-white">

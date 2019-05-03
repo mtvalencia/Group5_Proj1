@@ -1,7 +1,7 @@
 body {
     /* Typography */
     font-size: 20px;
-    color: #3e4444;
+    color:#222831;
     line-height: 27px;
   
     /* Visual */
@@ -16,7 +16,7 @@ body {
  }
 h1{
       z-index: 0;
-      text-decoration-color: #b2ad7f;
+      text-decoration-color: #3d424b;
       text-align: center;
       text-decoration-line: underline;
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -48,9 +48,14 @@ h1{
     
   }
 #sourceColumn{
-    font-size: 16px;
-  
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold; 
     min-width: 150px;
+    margin-left: 5px;
+    padding-left: 5px;
+    color: #3d424b;
+    font-style: italic;
   }
 
   #news-button {
@@ -72,7 +77,7 @@ h1{
  
   .btn {
       border-block-start-width: 4px;
-      border-color: #878f99;
+      border-color: #3ca3da;
       fill: lightblue;
       flex: whitesmoke;
   }
@@ -91,4 +96,66 @@ h1{
     width: 850px;
     height: 350px;
   }
+}
+
+#articletitle {
+  font-size: 16px;
+  font-style: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+}
+
+.newsSource {
+  
+  width: 400px;
+  margin-left: 10px;
+}
+
+.newspaper {
+  position: relative;
+  margin: auto;
+  bottom: 10px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #3d424b;
+  
+ 
+
+}
+
+.headline {
+  bottom: 10px;
+  margin-left: -15px;
+  margin-right: 10px;
+  color: #eeecec;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #3d424b;
+  position: relative;
+  float: left;
+  
+ 
+
+}
+
+.summary {
+  bottom: 10px;
+  padding-left: 115px;
+  color: #eeecec;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #3d424b;
+  float: right;
+  
+
+}
+
+.titlebar {
+  display: inline-block;
+}
+
+#description {
+  font-size: 16px;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#readmore {
+  font-style: bold;
+  
 }

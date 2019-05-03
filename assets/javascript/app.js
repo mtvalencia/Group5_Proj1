@@ -22,6 +22,15 @@ L.control.layers({
   "Streets": streets
 }).addTo(map);
 
+// var popup = L.popup();
+
+//     function onMapClick(e) {
+//         popup.setLatLng(e.latlng)
+//             .setContent("You clicked the map at " + e.latlng.toString())
+//             .openOn(map);
+//     }
+
+// map.on('click', onMapClick);
 
 map.on("click", function (e) {
   var coord = e.latlng.toString().split(',');
@@ -56,7 +65,6 @@ $("form.form").submit(function(e){
   searchNews(citySearch)
 });
 
-
 //News API query
 
 var searchNews = function (location) {
@@ -70,6 +78,7 @@ var searchNews = function (location) {
     for (var i = 0; i < 3; ++i) {
       var newsHTML = buildHTMLrow(response.articles[i])
       document.querySelector("#newsArticle").appendChild(newsHTML)
+      // if (response.articles.source.id)= ""
     }
   })
 };

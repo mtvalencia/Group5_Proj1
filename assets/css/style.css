@@ -87,28 +87,68 @@ h1{
 
 
 @media only screen and (max-width: 600px) {
-  #map {
-    width: 850px;
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #map {
-    width: 500px;
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 200px) {
-  #map {
-    width: 330px;
-    height: 260px;
-    margin-left: 30px;
-  }
-}
-@media only screen and (max-width: 100px) {
-  #map {
-    width: 330px;
-    height: 260px;
-  }
-}
+    #map {
+      width: 850px;
+      height: 350px;
+    }
+   }
+   
+   
+   @media only screen and (max-width: 400px) {
+    #map {
+      width: 500px;
+      height: 300px;
+    }
+   }
+   @media only screen and (max-width: 200px) {
+    #map {
+      width: 330px;
+      height: 260px;
+      margin-left: 30px;
+    }
+   }
+   @media only screen and (max-width: 100px) {
+    #map {
+      width: 330px;
+      height: 260px;
+    }
+   }
+   @media only screen and (max-width: 600px) {
+      #map {
+          height: 340px;
+          border: 3px black;
+          align-content: center;
+          box-shadow: 12px 12px 29px #555;
+      }
+    }
+   
+   
+   
+   
+   @media only screen and (max-width: 600px) {
+    #map {
+      width: 850px;
+      height: 350px;
+    }
+   }
+   
+   
+   @media only screen and (max-width: 400px) {
+    #map {
+      width: 500px;
+      height: 300px;
+    }
+   }
+   @media only screen and (max-width: 200px) {
+    #map {
+      width: 330px;
+      height: 260px;
+      margin-left: 30px;
+    }
+   }
+   @media only screen and (max-width: 100px) {
+    #map {
+      width: 330px;
+      height: 260px;
+    }
+   }

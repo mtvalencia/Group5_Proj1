@@ -77,7 +77,7 @@ var settings = {
           <td id="sourceColumn">${article.source.name}</td>
           <td>${article.title}</td>
           <td>${article.description}</td>
-          <td><a href="${article.url}">Link</a></td>
+          <td><a href="${article.url}">Read more..</a></td>
         `
         divElement.innerHTML = rowHTML
         return divElement

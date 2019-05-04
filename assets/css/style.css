@@ -79,12 +79,21 @@ h1{
 
 #map { 
     height: 400px;
-    border: 3px black;
+<<<<<<< HEAD
+    border-width: 3px;
     align-content: center;
-
-    box-shadow: 12px 12px 29px #555;
 }
-
+#newsArticle {
+    border-color: black;
+}
+@media only screen and (max-width: 600px) {
+    #map {
+        height: 340px;
+        border: 3px black;
+        align-content: center;
+        box-shadow: 12px 12px 29px #555;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
   #map {
@@ -92,6 +101,7 @@ h1{
     height: 350px;
   }
 }
+
 
 @media only screen and (max-width: 400px) {
   #map {
